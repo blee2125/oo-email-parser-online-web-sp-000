@@ -8,7 +8,7 @@ class EmailAddressParser
 
   def self.new_email(csv_data)
     email_address= csv_data.split(",", " ")
-    
+
   end
 
 end
