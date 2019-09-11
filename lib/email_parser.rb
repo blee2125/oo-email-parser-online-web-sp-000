@@ -5,5 +5,8 @@
 class EmailAddressParser
   attr_accessor :email
 
+  def self.new_email(csv_data)
+    csv_data.split(",", " ")
+  end
 
 end
