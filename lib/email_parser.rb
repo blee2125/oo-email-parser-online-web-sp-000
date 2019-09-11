@@ -6,9 +6,11 @@ class EmailAddressParser
   attr_accessor :email
   email_addresses = []
 
-  def new_email(csv_data)
-    csv_data.split(",", " ").each { |e| email_addresses << e }
-
+  def initialize(emails)
+    @emails = emails
   end
 
+  def parse
+    emails.split(/, | /).uniq
+  end
 end
